@@ -1,0 +1,10 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.14.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:lodash:20180130':
+    - ipfs > ipld-zcash > zcash-bitcore-lib > lodash:
+        patched: '2020-03-18T21:25:36.855Z'
+    - ipfs-registry-mirror-common > ipfs > ipld-zcash > zcash-bitcore-lib > lodash:
+        patched: '2020-03-18T21:25:36.855Z'
