@@ -18,7 +18,9 @@
     "start": "node .",
     "release": "aegir release -t node",
     "release-minor": "aegir release --type minor -t node",
-    "release-major": "aegir release --type major -t node"
+    "release-major": "aegir release --type major -t node",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -44,12 +46,13 @@
     "ipfs": "0.34.0",
     "ipfs-http-client": "^29.0.0",
     "ipfsd-ctl": "~0.40.1",
-    "ipfs-registry-mirror-common": "^1.0.13",
+    "ipfs-registry-mirror-common": "^2.0.0",
     "once": "^1.4.0",
     "request": "^2.88.0",
     "request-promise": "^4.2.2",
     "which-promise": "^1.0.0",
-    "yargs": "^12.0.1"
+    "yargs": "^12.0.1",
+    "snyk": "^1.305.1"
   },
   "devDependencies": {
     "aegir": "^18.0.3",
@@ -69,5 +72,6 @@
     "achingbrain <alex@achingbrain.net>",
     "dignifiedquire <dignifiedquire@gmail.com>",
     "gonders <gonders@no.com>"
-  ]
+  ],
+  "snyk": true
 }
